@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+/* import Header from './component/Header/Header';
+ */import Navbar from './component/Navbar/Navbar';
+import Annonces from './pages/Annonces';
+import Chatt from './pages/Chatt';
+import Notes from './pages/Notes';
+import Planning from './pages/Planning';
+import Financement from './pages/Financement';
+import "./encapsule.css"
+import Inscriptions from './component/Inscriptions/Inscriptions';
+import Connexions from './component/Connexions/Connexions';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+      <BrowserRouter>
+      
+     
+          
+          <Routes>
+            <Route index element={<Inscriptions/>}/>
+            <Route path="/connect" element={<Connexions/>}/>
+          <Route path="/" element={<Navbar />} >
+          <Route path="/Annonces" element={<Annonces />} />
+          <Route path="/Chat" element={<Chatt />} />
+          <Route path="/Notes" element={<Notes />} />
+          <Route path="/Planning" element={<Planning />} />
+          <Route path="/Financement" element={<Financement />} />
+          </Route>
+          
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

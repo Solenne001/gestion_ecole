@@ -1,0 +1,10 @@
+.annonce-card{
+    border: solid 1px;
+    width: 100%;
+    height: 45vh;
+}
+
+.img{
+    height: 85%;
+    width: 100%;
+}

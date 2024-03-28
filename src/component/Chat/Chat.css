@@ -1,0 +1,18 @@
+.text{
+    width: 180%;
+    height: 50px;
+    margin-left: 30%;
+    background-color: #535462;
+    border: none;
+    border-radius: 10px;
+    border-bottom: solid 2px;
+    margin-top: 80vh;
+    
+}
+
+input{
+    color: azure;
+    font-size: 20px;
+    outline: none;
+}
+
