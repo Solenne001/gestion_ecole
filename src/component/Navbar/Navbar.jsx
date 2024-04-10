@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {Outlet} from "react-router-dom"
 // import logo from "../Assets/logo.png";
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
       {/* <span className="span"></span> */}
 
       <div className="nav-log-out">
-        <button>Log Out</button>
+        <button type="submit" ><NavLink to={"/connect"}>Log Out</NavLink></button>
       </div>
     </div>
 

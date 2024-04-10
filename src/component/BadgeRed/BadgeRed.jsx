@@ -1,9 +1,9 @@
 import React from 'react';
-import "./Badge.css"
+import "./BadgeRed.css"
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-const Badge = () => {
+const BadgeRed = () => {
     const [financeList, setFinanceList]= useState("")
     useEffect(()=>{
         axios.get("http://localhost:5000/finance/select")
@@ -29,18 +29,18 @@ const Badge = () => {
     return (
 
         
-        <div className='ligne'>
+        <div className='lignes'>
              
-                <div className='badge'>
+                <div className='badges'>
                  
 
                 </div>
 
-            <div className = 'solde'>
+            <div className = 'soldes'>
                 <p>{financeElt}</p>
             </div>
         </div>
     );
 };
 
-export default Badge;
+export default BadgeRed;

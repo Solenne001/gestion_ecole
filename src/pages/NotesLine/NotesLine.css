@@ -5,20 +5,23 @@
     font-size: 20px;
     font-weight: 200;
     width: 300%;
+    color: #000;
 }
 
 .variableLine{
     display: flex;
     justify-content: space-between;
+    color: #000;
 }
 
 .variableLine p{
     margin: 20px;
+    color: #000;
 }
 
 
 hr{
-    width: 80%;
+    width: 100%;
     background: #000;
     height: 3px;
 }
